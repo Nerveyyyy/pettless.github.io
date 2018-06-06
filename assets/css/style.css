@@ -26,7 +26,7 @@ body {
 }
 
 .badge {
-  position: absolute;
+  position: fixed;
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
@@ -37,7 +37,7 @@ body {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   left: 1250px;
   top: 45px;
   text-decoration: none;
@@ -58,13 +58,13 @@ body {
 
 .title {
   color: #ffffff;
-  position: absolute;
+  position: fixed;
   top: 250px;
   left: 750px;
 }
 
 .work {
-  position: absolute;
+  position: fixed;
   top: 350px;
   left: 850px;
   background-color: Transparent;
