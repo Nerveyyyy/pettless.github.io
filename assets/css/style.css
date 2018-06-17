@@ -26,34 +26,53 @@ body {
 }
 
 .badge {
-  position: fixed;
+  display: inline-flex;
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
+  text-align: center;
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-  z-index: 1;
-  left: 300px;
-  top: 30px;
+  background: blue;
   text-decoration: none;
+  margin: auto;
 }
 
 .nav {
-  position: fixed;
-  left: 1250px;
-  top: 45px;
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: center;
   text-decoration: none;
 }
 
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
 .pads {
-  padding: 0px 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 20px;
   color: #ffffff;
   text-decoration: none;
   transition: .2s;
-  float: left;
 }
 
 .pads:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .title {
