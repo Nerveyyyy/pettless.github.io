@@ -26,24 +26,20 @@ body {
 }
 
 .badge {
-  display: inline-flex;
-  width: 100px;  /* Or whatever */
-  height: 100px; /* Or whatever */
-  margin: auto;  /* Magic! */
+  display: flex;
+  justify-content: flex-start;
   text-align: center;
   font-weight: bold;
   font-size: 40px;
   color: #ffffff;
-  background: blue;
   text-decoration: none;
-  margin: auto;
 }
 
 .nav {
   display: flex;
   flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
-  justify-content: center;
+  /* This aligns items to the end ilne on main-axis */
+  justify-content: flex-end;
   text-decoration: none;
 }
 
@@ -73,6 +69,10 @@ body {
 
 .pads:hover {
   transform: scale(1.15);
+}
+
+.contactme {
+	margin-right: 40px;
 }
 
 .title {
